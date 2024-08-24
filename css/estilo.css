@@ -1,0 +1,118 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #54BAF0;
+}
+.principal{
+    background-color: #54BAF0;
+}
+.header{
+    background-image: url(../img/unnamed.webp);
+    height:400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.cabecalho--menu{
+    text-align: center;
+    margin-top: 10px;
+}
+.cabecalho--nav ul{
+    margin:0px 0;
+    padding: 0;
+    background-color: rgba(10, 7, 7, 0.588);
+    margin: auto;
+    width: 30%;
+    box-sizing: border-box;
+}
+.cabecalho--nav li{
+    display: inline-block;
+   
+    padding: 15px;
+    margin:0;    
+}
+.cabecalho--nav a{
+    text-decoration: none;   
+    color: black;
+}
+.cabecalho--nav li a:hover{
+    text-decoration:1px solid white;
+    color:white;
+}
+
+.border-left-right{
+    border-left:3px solid white;
+    border-right:3px solid white;
+    width:19%;
+}
+.border-right{
+    border-right: 3px solid white;
+    width: 19%;
+}
+main{
+    background: #5489F0;
+    margin: auto;
+    padding: 15px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;  
+    
+}
+main h1{
+    text-align: center;
+}
+.Produto--livrophotoshop{
+    width:138px;
+    height:200px;
+    margin-top: 20px;
+}
+.conteudo--main{
+    display: flex;
+    justify-content: center;
+  
+}
+.conteudo--main p{
+    margin-left:18px;
+    width: 33%;
+    font-family: Arial,sans-serif;
+    line-height: 1.8;
+}
+.h3-center{
+    text-align: center;
+}
+.rodape{
+    position: relative;
+    padding:25px;
+    height: 200px;
+    background-color: #5458F0;
+    margin-top: 10px;
+       
+}
+.endereco{
+    position: absolute;
+    top:0;
+    left: 30px;
+}
+.icones-sociais{
+    position: absolute;
+    top:0;
+    left: 220px;
+}
+.icones-sociais img{
+    width:32px;
+}
+.icones-sociais h6{
+    
+    font-size: 14px;
+}
+.privacidade{
+    position: absolute;
+    top:0;
+    right: 30px;
+}
+.privacidade img{
+    width:64px;
+}
+

@@ -1,0 +1,47 @@
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    padding: 20px;
+    margin: auto 80px auto 80px;
+    
+}
+
+.textarea-container {
+    width: 45%;
+    margin-right: 5%; /* Espaço entre o textarea e os outros campos */
+}
+
+.form-container {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+textarea {
+    width: 100%;
+    height: 253px;
+}
+
+.input--tel,.input--nome,.input--email, .select--option_produto {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+.input--tel{
+    margin-top: 10px;
+}
+.btn-enviar {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}

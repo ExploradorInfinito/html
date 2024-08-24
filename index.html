@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="stylesheet" href="./css/form_newsletter.css">
+    <link rel="stylesheet" href="./css/form_container.css">
+    <link rel="stylesheet" type="text/css" href="./css/modal.css">
+    <link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="principal">
+    <div class="header"></div>
+    <header class="cabecalho--menu">
+        <nav class="cabecalho--nav">
+            <ul>
+                <li><a href="#" onclick="modal.showModal()">Cadastre-se</a></li>
+                <li class="border-left-right padding"><a href="#">Empresas</a></li>
+                <li class="border-right padding"><a href="#">produto</a> </li>
+                <li><a href="#">Contato</a></li>
+
+            </ul>
+        </nav>
+        
+    </header>
+    
+    
+
+    <!--modal login-->
+    
+    <dialog id="dialog-box">
+        <button onclick="document.getElementById('dialog-box').close()">Close</button>
+    </dialog>
+
+    <dialog id="modal">
+        <label for="usuario">Usuario
+        <input type="text" name="usuario" id="usuario">
+    </label>
+    <label for="senha">Senha</label>
+        <input type="password" name="senha" id="senha">
+        <a href="" class="esqueceuSenha">Esqueceu a senha</a>
+        <button class="btn">Login</button>
+        <button class="btn" onclick="modalcadastro.showModal()">Cadastre-se</button>
+        <a href="#"onclick="modal.close()" class="icons-close"><i class="fa fa-times" aria-hidden="true"></i></a>
+    
+    </dialog>
+    <!--Fim modal login-->
+    <!--modal cadastro-->
+        <dialog id="modal-box2--cadastro">
+            <button onclick="document.getElementById('modal-box2--cadastro').close()">Close</button>
+        </dialog>
+        <dialog id="modalcadastro">
+            
+            <form action="#" method="POST">
+                <div class="modalcontainer">
+                <fieldset class="grupo">
+                    <div class="campo">
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome" required>
+                    </div>
+                    <div class="campo">
+                        <label for="nome_user">Nome do usuario</label>
+                        <input type="text" name="nome_user" id="nome_user" required>
+                    </div>
+                </fieldset>
+                <fieldset class="grupo">
+                    <div class="campo">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="campo">
+                        <label for="cpf">CPF</label>
+                        <input type="text" name="cpf" id="cpf" required>
+                    </div>
+                </fieldset>
+                <fieldset class="grupo">
+                    <div class="campo">
+                        <label for="senha_cadastro">Senha</label>
+                        <input type="password" name="senha_cadastro" id="senha_cadastro" required>
+                    </div>
+                    <div class="campo">
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" name="telefone" id="telefone">
+                    </div>
+                </fieldset>
+                
+                    <div class="campo">
+                        <label for="" style="text-align: center; margin-top: 15px; margin-bottom: 8px;">Sexo</label>
+                        <div class="campo_inline-block">
+                        <label for="">
+                            <input type="radio" name="sexo" id="masculino">Masculino
+                        </label>
+                        <label for="">
+                            <input type="radio" name="sexo" id="feminino">Feminino
+                        </label>
+                        <label for="">
+                            <input type="radio" name="sexo" id="outro">Outro
+                        </label>
+                        <label for="">
+                            <input type="radio" name="sexo" id="nao informar">Prefiro nao informar
+                        </label>
+                    </div>
+                </div>
+                <a href="#" onclick="modalcadastro.close()" class="button-close_cadastro"><i class="fa fa-times" aria-hidden="true"></i></a>
+            
+                
+                <button type="submit" class="botao-cadastrar">Cadastrar</button>
+            </div>
+            </form>
+        
+        </dialog>
+
+    <!--Fim modal cadastro-->
+
+
+
+
+
+    <main>
+        <h1>Livro Photoshop</h1>
+        <div class="conteudo--main">
+        <img src="./img/livrophotoshop.jpg" class="Produto--livrophotoshop" alt="Produtos">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ex rem modi tempore nisi, odio corrupti repellat quidem porro blanditiis reiciendis ducimus ab quos at voluptatibus nobis eveniet dolorum quae?
+        Explicabo esse eos cumque eveniet, optio sapiente reiciendis voluptas asperiores porro quisquam, error doloribus a voluptates enim officia? Labore amet neque sed facere repellendus praesentium accusamus enim qui omnis autem?
+        .</p>
+    </div>
+    
+    <form action="#" method="get" class="form-newsletter">
+    
+        <label for="form-newsletter__label" class="form-newsletter__label">
+          Seu email pessoal
+        </label>
+        <input id="email-newsletter" name="email-newsletter" type="email" placeholder="digite seu email sobre o detalhe desse produto" class="form-newsletter__campo">
+        <button type="submit" class="form-newsletter__botao">
+          OK
+        </button>
+      </form>
+      <h3 class="h3-center">Informaçoes</h3>
+      <div class="container">
+        <div class="textarea-container">
+            <textarea placeholder="Digite sua mensagem...">Digite duvida conosco</textarea>
+        </div>
+        <div class="form-container">
+            <input type="text" class="input--nome" placeholder="digite o seu nome" name="" id="">
+            <input type="email" class="input--email" placeholder="Digite seu email...">
+            <input type="tel" class="input--tel" placeholder="Digite seu telefone...">
+            <select class="select--option_produto">
+                <option value="" disabled selected>Selecione um produto...</option>
+                <option value="produto1">Livro</option>
+                <option value="produto2">Outras Ferramenta ou Programa como fotoshop</option>
+                <option value="produto3">Produto</option>
+            </select>
+            <button type="submit" class="btn-enviar">Enviar</button>
+        </div>
+    </div>
+    </main>
+
+    <footer class="rodape">
+        <address class="endereco">
+            <h2>Endereço</h2>
+            Bairro Jardim Lenize <br>
+            Cidade Guarulhos <br>
+            CEP: 07151-550 <br>
+        </address>
+        <address class="icones-sociais">
+            <h6>Entrar nas nossas redes sociais <br>Oferta excrusiva</h6>
+        <img src="img/facebook.png" alt="social facebook">
+        <img src="img/twitter.png" alt="sociais twitter">
+        <img src="img/youtube (1).png" alt="sociais youtube">
+    </address>
+    <article class="privacidade">
+        <h4>Politica &copy; privacidade</h4>
+        <img src="./img/escudo.png" alt="escudo protedor privacidade">
+        <img src="./img/escudo2.png" alt="escudo protedor aprovado">
+    </article>
+    </footer>
+</div>
+</body>
+</html>
