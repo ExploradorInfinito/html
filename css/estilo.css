@@ -22,7 +22,7 @@ body{
     padding: 0;
     background-color: rgba(10, 7, 7, 0.588);
     margin: auto;
-    width: 30%;
+    width: 60%;
     box-sizing: border-box;
 }
 .cabecalho--nav li{
@@ -39,16 +39,29 @@ body{
     text-decoration:1px solid white;
     color:white;
 }
-
+.border-left{
+    border-left: 3px solid white;
+    width: 18%;
+    margin-right: 4px;
+}
 .border-left-right{
     border-left:3px solid white;
     border-right:3px solid white;
-    width:19%;
+    width:18%;
 }
 .border-right{
     border-right: 3px solid white;
-    width: 19%;
+    width: 18%;
+    margin-left: 4px;
 }
+/* .cabecalho--nav ul li:first-child{
+    width:5%;
+}
+
+.prime-a{
+    margin-right: 33px
+} */
+
 main{
     background: #5489F0;
     margin: auto;

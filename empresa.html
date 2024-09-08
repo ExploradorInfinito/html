@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="stylesheet" href="./css/form_newsletter.css">
+    <link rel="stylesheet" href="./css/form_container.css">
+    <link rel="stylesheet" type="text/css" href="./css/modal.css">
+    <link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="./css/empresa.css">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div class="principal">
+    <div class="header"></div>
+    <header class="cabecalho--menu">
+        <nav class="cabecalho--nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="border-left padding"><a href="#" onclick="modal.showModal()">Cadastre-se</a></li>
+                <li class="border-left-right padding"><a href="#">Empresas</a></li>
+                <li class="border-right padding"><a href="#">produto</a> </li>
+                <li><a href="#">Contato</a></li>
+
+            </ul>
+        </nav>
+        
+    </header>
+    
+    
+
+    <!--modal login-->
+    
+    <dialog id="dialog-box">
+        <button onclick="document.getElementById('dialog-box').close()">Close</button>
+    </dialog>
+
+    <dialog id="modal">
+        <label for="usuario">Usuario
+        <input type="text" name="usuario" id="usuario">
+    </label>
+    <label for="senha">Senha</label>
+        <input type="password" name="senha" id="senha">
+        <a href="" class="esqueceuSenha">Esqueceu a senha</a>
+        <button class="btn">Login</button>
+        <button class="btn" onclick="modalcadastro.showModal()">Cadastre-se</button>
+        <a href="#"onclick="modal.close()" class="icons-close"><i class="fa fa-times" aria-hidden="true"></i></a>
+    
+    </dialog>
+    <!--Fim modal login-->
+    <!--modal cadastro-->
+        <dialog id="modal-box2--cadastro">
+            <button onclick="document.getElementById('modal-box2--cadastro').close()">Close</button>
+        </dialog>
+        <dialog id="modalcadastro">
+            
+            <form action="#" method="POST">
+                <div class="modalcontainer">
+                <fieldset class="grupo">
+                    <div class="campo">
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome" required>
+                    </div>
+                    <div class="campo">
+                        <label for="nome_user">Nome do usuario</label>
+                        <input type="text" name="nome_user" id="nome_user" required>
+                    </div>
+                </fieldset>
+                <fieldset class="grupo">
+                    <div class="campo">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="campo">
+                        <label for="cpf">CPF</label>
+                        <input type="text" name="cpf" id="cpf" required>
+                    </div>
+                </fieldset>
+                <fieldset class="grupo">
+                    <div class="campo">
+                        <label for="senha_cadastro">Senha</label>
+                        <input type="password" name="senha_cadastro" id="senha_cadastro" required>
+                    </div>
+                    <div class="campo">
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" name="telefone" id="telefone">
+                    </div>
+                </fieldset>
+                
+                    <div class="campo">
+                        <label for="" style="text-align: center; margin-top: 15px; margin-bottom: 8px;">Sexo</label>
+                        <div class="campo_inline-block">
+                        <label for="">
+                            <input type="radio" name="sexo" id="masculino">Masculino
+                        </label>
+                        <label for="">
+                            <input type="radio" name="sexo" id="feminino">Feminino
+                        </label>
+                        <label for="">
+                            <input type="radio" name="sexo" id="outro">Outro
+                        </label>
+                        <label for="">
+                            <input type="radio" name="sexo" id="nao informar">Prefiro nao informar
+                        </label>
+                    </div>
+                </div>
+                <a href="#" onclick="modalcadastro.close()" class="button-close_cadastro"><i class="fa fa-times" aria-hidden="true"></i></a>
+            
+                
+                <button type="submit" class="botao-cadastrar">Cadastrar</button>
+            </div>
+            </form>
+        
+        </dialog>
+
+    <!--Fim modal cadastro-->
+
+
+
+
+
+    <main>
+     <div class="empresas">
+        <div class="linha">
+            <a href="#" class="background_endereco">
+                <img src="./img/empresa01.jpeg" class="regular--tamanhoimg" alt="">
+            </a>
+            
+            <p class="regular--paragrafo-empresas">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium voluptates facere officiis aspernatur quidem? Doloribus quaerat repudiandae harum animi, illo esse temporibus similique officia deleniti debitis, accusamus quidem, nesciunt consequuntur!
+                Alias obcaecati doloremque quas delectus nulla ea dolores nesciunt impedit corrupti, voluptas maxime velit doloribus blanditiis nemo aspernatur magni ipsam. Temporibus illo tempora eaque aut libero ex officiis corporis laudantium?
+                Quam eaque aperiam adipisci debitis labore autem deserunt id amet laboriosam! Cupiditate accusantium eum atque assumenda possimus iusto fugit dolorum sint veniam distinctio, repellat natus voluptatum hic sunt adipisci iste.
+                Vero reprehenderit culpa at dolorem hic ipsam aperiam voluptatem. At saepe facere adipisci cumque earum voluptate iusto? Minus officia reiciendis, tempora necessitatibus quod mollitia recusandae explicabo ratione atque magni cupiditate?
+            </p>
+            <a href="" class="botao-anchor">Mandar Curriculo</a>
+        </div>
+        <div class="linha-reversa">
+            <a href="#" class="background_endereco">
+                <img src="./img/empresa02.jpg" class="regular--tamanhoimg2 posicao_right"  alt="">
+            </a>
+            
+            <p class="regular--paragrafo-empresas">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quibusdam ut saepe aliquid reiciendis labore est quasi ullam accusamus officiis neque totam, id temporibus iusto voluptatum corrupti hic rerum! Doloribus?
+                Expedita iste id incidunt excepturi error architecto dignissimos nobis mollitia aliquid, eveniet, quisquam ab ipsum perferendis corporis facilis sequi, eaque impedit temporibus ratione ut? Dolor iste optio laboriosam atque quo.
+                Illum ea natus rem, labore inventore nesciunt, porro eos quidem eligendi sit repellat adipisci dicta magni eaque asperiores expedita fuga incidunt praesentium! Incidunt non expedita atque libero suscipit natus eius.
+                Pariatur reiciendis earum ullam aut esse iusto qui vitae quam magnam iure, sapiente officiis totam culpa dignissimos impedit enim expedita commodi doloremque. Ipsum vero quaerat aperiam error sed consequatur natus.
+            </p>
+            <a href="" class="botao-anchor2">Mandar Curriculo</a>
+        </div>
+        <div class="linha">
+            <a href="#" class="background_endereco">
+                <img src="./img/empresa03.jpg" class="regular--tamanhoimg" alt="">
+            </a>
+            
+            <p class="regular--paragrafo-empresas">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis atque quaerat, doloremque, consequuntur maiores harum nesciunt illo inventore iusto quisquam et consectetur aliquam aliquid at cum similique odio voluptate animi.
+                Error mollitia dicta quibusdam, voluptatum earum tempora repudiandae libero sed facere repellendus illum, perspiciatis dignissimos autem veniam blanditiis? Quibusdam quas sint veniam dolorum nemo ut delectus ab placeat maiores nulla!
+                Voluptates illum vel alias. Neque ab illum repudiandae quibusdam repellendus impedit quidem accusamus eaque est veniam cupiditate sed esse temporibus mollitia, dolor hic iste atque, blanditiis tempora necessitatibus adipisci earum.
+                Animi doloribus, dolorem tempora quasi iure nisi ratione numquam consequatur minima adipisci aliquam impedit. Architecto eaque soluta tempore facilis enim optio magnam, expedita rerum autem nihil labore quos voluptatem at.
+            </p>
+            <a href="" class="botao-anchor">Mandar Curriculo</a>
+        </div>
+        <div class="linha-reversa">
+            <a href="#" class="background_endereco">
+                <img src="./img/empresa04.jpg" class="regular--tamanhoimg2 posicao_right" alt="">
+            </a>
+            
+            <p class="regular--paragrafo-empresas">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, delectus sapiente a error, minus ipsa labore qui atque esse, rerum fuga ut ad nihil? Adipisci reiciendis non quod at sapiente.
+                Unde vel ullam animi laboriosam blanditiis commodi natus! Quisquam, obcaecati quae esse temporibus a voluptatum iure pariatur cumque rerum amet nostrum ratione facilis eligendi, sapiente deserunt voluptatibus aspernatur ipsa quasi.
+                Suscipit voluptatum nulla vero soluta, quidem repellat impedit sunt laudantium sapiente accusamus libero ab delectus tempora provident odio perspiciatis quod dolorum earum aliquid expedita dolore ea doloremque totam. Perspiciatis, explicabo.
+                Totam sint, ducimus libero et minima maiores optio, excepturi, in nobis quas maxime vitae quos eligendi sunt! Voluptatem eius quos commodi ipsa similique. Obcaecati incidunt iure qui neque, vero error!
+            </p>
+            <a href="" class="botao-anchor2">Mandar Curriculo</a>
+        </div>
+        
+     </div>
+    </main>
+
+    <footer class="rodape">
+        <address class="endereco">
+            <h2>Endereço</h2>
+            Bairro Jardim Lenize <br>
+            Cidade Guarulhos <br>
+            CEP: 07151-550 <br>
+        </address>
+        <address class="icones-sociais">
+            <h6>Entrar nas nossas redes sociais <br>Oferta excrusiva</h6>
+        <img src="img/facebook.png" alt="social facebook">
+        <img src="img/twitter.png" alt="sociais twitter">
+        <img src="img/youtube (1).png" alt="sociais youtube">
+    </address>
+    <article class="privacidade">
+        <h4>Politica &copy; privacidade</h4>
+        <img src="./img/escudo.png" alt="escudo protedor privacidade">
+        <img src="./img/escudo2.png" alt="escudo protedor aprovado">
+    </article>
+    </footer>
+</div>
+</body>
+</html>
